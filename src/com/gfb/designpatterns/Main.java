@@ -129,6 +129,7 @@ public class Main {
 
         // Registro de observadores para eventos específicos
         eventManager.subscribe(OrderEventType.PAYMENT_CONFIRMED, customerAlice);
+        eventManager.subscribe(OrderEventType.ORDER_CANCELLED, customerBob);
         eventManager.subscribe(OrderEventType.PAYMENT_CONFIRMED, stockService);
         eventManager.subscribe(OrderEventType.ORDER_CANCELLED, stockService);
 

@@ -30,13 +30,11 @@ public class OrderCheckoutFacade {
     private final CustomerService customerService;
     private final PaymentGateway paymentGateway;
     private final LogisticsService logisticsService;
-    private final OrderEventManager eventManager;
 
     public OrderCheckoutFacade() {
         this.customerService = new CustomerService();
         this.paymentGateway = new PaymentGateway();
         this.logisticsService = new LogisticsService();
-        this.eventManager = new OrderEventManager();
     }
 
     public record CheckoutSummary(

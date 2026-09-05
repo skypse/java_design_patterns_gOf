@@ -159,11 +159,21 @@ d:/projects/java_projects/java_design_patterns_gOf/
    ```cmd
    .\build.bat
    ```
-2. **Executar**:
+2. **Executar Demonstração**:
    Dê um duplo clique em `run.bat` ou execute no terminal:
    ```cmd
    .\run.bat
    ```
+3. **Executar Testes Automatizados**:
+   Dê um duplo clique em `test.bat` ou execute no terminal:
+   ```cmd
+   .\test.bat
+   ```
+
+### Executando Testes Manualmente via Terminal
+```bash
+java -cp bin com.gfb.designpatterns.test.TestSuiteRunner
+```
 
 ### Executando Manualmente via Terminal
 ```bash
